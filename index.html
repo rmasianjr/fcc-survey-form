@@ -1,80 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Survey Form | Money Wise</title>
-</head>
-<body>
-  <div class="container">
-  <header>
-    <h1 id="title">Money Wise</h1>
-  </header>
-  <main>
-    <p id="description">Payday is coming, receive better ways on how to save your money</p>
-    <form id="survey-form" action="#">
-      <div class="form-group">
-       <label for="name" id="name-label">Name:</label>
-       <input type="text" name="name" id="name" placeholder="Enter your name" required>
-      </div>
-      <div class="form-group">
-       <label for="email" id="email-label">Email:</label>
-       <input type="email" name="email" id="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
-        <label for="age" id="number-label">Age:</label>
-        <input type="number" name="age" id="number" placeholder="Age" min="1" max="150">
-      </div>
-      <fieldset>
-        <legend>Gender</legend>
-        <div class="radio-group">
-          <div>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="male">Male</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Survey Form | Money Wise</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1 id="title">Money Wise</h1></header>
+      <main>
+        <p id="description">
+          Payday is coming, receive better ways on how to save your money
+        </p>
+        <form id="survey-form" action="#">
+          <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
           </div>
-          <div>
-            <input type="radio" name="gender" id="female" value="female">
-            <label for="female">Female</label>
+          <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
           </div>
-          <div>
-            <input type="radio" name="gender" id="other" value="other">
-            <label for="other">Other</label>
+          <div class="form-group">
+            <label for="age" id="number-label">Age:</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              placeholder="Age"
+              min="1"
+              max="150"
+            />
           </div>
-        </div>
-      </fieldset>
-      <div class="form-group">
-        <label for="salary">How much is your monthly salary?</label>
-        <select name="salary" id="dropdown">
-          <option disabled value="">Choose salary</option>
-          <option value="low">$50 - $100</option>
-          <option value="mid">$100 - $300</option>
-          <option value="high">$300 - $500</option>
-          <option value="higher">$500 - $1000</option>
-          <option value="highest">$1000 - $3000</option>
-          <option value="super">$3000 - More</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="comments">How do you spent your money?</label>
-        <textarea name="comment" id="comments" placeholder="I spent my money to the things i don't need...." required></textarea>
-      </div>
-      <div class="form-group">
-        <input type="checkbox" name="tips" id="save" value="save">
-        <label for="save">I want to receive money saving tips</label>
-      </div>
-      <div class="form-group">
-        <input type="checkbox" name="tips" id="subscribe" value="subscribe">
-        <label for="subscribe">Subscribe (receive weekly tips)</label>
-      </div>
-      <button type="submit" id="submit">Submit</button>
-    </form>
-  </main>
-  <footer>
-    <p> Written and Coded by : <a href="https://twitter.com/rmasianjr" target="_blank">Ricardo Masian Jr.</a></p>
-  </footer>
-</div>
-</body>
+          <fieldset>
+            <legend>Gender</legend>
+            <div class="radio-group">
+              <div>
+                <input type="radio" name="gender" id="male" value="male" />
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input type="radio" name="gender" id="female" value="female" />
+                <label for="female">Female</label>
+              </div>
+              <div>
+                <input type="radio" name="gender" id="other" value="other" />
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="salary">How much is your monthly salary?</label>
+            <select name="salary" id="dropdown">
+              <option disabled value="">Choose salary</option>
+              <option value="low">$50 - $100</option>
+              <option value="mid">$100 - $300</option>
+              <option value="high">$300 - $500</option>
+              <option value="higher">$500 - $1000</option>
+              <option value="highest">$1000 - $3000</option>
+              <option value="super">$3000 - More</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comments">How do you spent your money?</label>
+            <textarea
+              name="comment"
+              id="comments"
+              placeholder="I spent my money to the things i don't need...."
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="tips" id="save" value="save" />
+            <label for="save">I want to receive money saving tips</label>
+          </div>
+          <div class="form-group">
+            <input
+              type="checkbox"
+              name="tips"
+              id="subscribe"
+              value="subscribe"
+            />
+            <label for="subscribe">Subscribe (receive weekly tips)</label>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </main>
+      <footer>
+        <p>
+          Written and Coded by :
+          <a href="https://twitter.com/rmasianjr" target="_blank"
+            >Ricardo Masian Jr.</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
